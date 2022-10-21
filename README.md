@@ -10,5 +10,5 @@ Cleanup image filenames and move it to a destination
 #### <a name="prerequisites"></a>Prerequisites
 #### <a name="setup"></a>Setup
 #### <a name="running-the-script"></a>Running the Script
-### <a name="cleaning-up"></a>Cleaning Up
+#### <a name="cleaning-up"></a>Cleaning Up
 #### <a name="configuration"></a>Configuration
