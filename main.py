@@ -28,7 +28,7 @@ def main():
             destination_repository_child.mkdir(exist_ok=True)
             number_of_files = get_file_count(destination_repository_child) + 1
         
-            for index,source in get_files_with_index(folder,number_of_files):
+            for index,source in get_files_with_index(folder=folder,current_number_of_files=number_of_files):
                 destination = destination_repository_child.joinpath(f"{index}{source.suffix}")
                 print(f"Source: {source} Destination: {destination}")
                 shutil.move(src=source,dst=destination)
