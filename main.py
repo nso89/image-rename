@@ -9,7 +9,7 @@ def get_file_count(folder: Path) -> int:
             file_count += 1
     return file_count
 
-def get_files_with_index(folder, current_number_of_files) -> tuple:
+def get_files_with_index(folder: Path, current_number_of_files: int) -> tuple[int,Path]:
     for index,source in enumerate(folder.iterdir(), start=current_number_of_files):
         if source.is_file():
             yield index,source
