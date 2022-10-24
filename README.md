@@ -46,7 +46,7 @@ C:\Users\nso89\image-rename-cleanup>python main.py
 **Example**:
 ```
 Source: ..\Kirk\James_T._Kirk,_alternate_reality.webp Destination: R:\Pictures\Kirk\1.webp
-Source: ..\Kirk\star-trek-strange-new-worlds-kirk-paul-wesley.webp Destination: R:\Pictures\Kirk\2.webp
+Source: ..\Kirk\star-trek-strange-new-worlds-kirk-paul-wesley.png Destination: R:\Pictures\Kirk\2.png
 Source: ..\Spock\8b10a9280bd46b8874af9b5cadec91d5.webp Destination: R:\Pictures\Spock\1.webp
 Source: ..\Spock\Spock_2254.webp Destination: R:\Pictures\Spock\2.webp
 ```
