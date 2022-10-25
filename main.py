@@ -17,7 +17,7 @@ def is_file(item: Path) -> bool:
 
 def main():
 
-    SOURCE_REPOSITORY = Path(Path.home()).joinpath("Repository")
+    SOURCE_REPOSITORY = Path.home().joinpath("Repository")
     DESTINATION_REPOSITORY = Path("R:\Pictures")
 
     to_delete : List[Path] = []
