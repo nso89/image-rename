@@ -60,7 +60,7 @@ If you need to change the `source` or `destination` folder:
 
 **Example**:
 ```python
-SOURCE_REPOSITORY = Path(Path.home()).joinpath("Repository")
+SOURCE_REPOSITORY = Path.home().joinpath("Repository")
 DESTINATION_REPOSITORY = Path("R:\Pictures")
 ```
 3. When you finish changing the variables, save and close the editor.
