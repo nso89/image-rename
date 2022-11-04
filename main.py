@@ -9,12 +9,12 @@ def get_file_count(folder: Path) -> int:
     and return it.
 
     Args:
-    folder: Path - the folder we're 
-    looping over.
+        folder: Path - the folder 
+        we're looping over.
 
     Return:
-    file_count: the number of files in 
-    the folder.
+        file_count: the number of files 
+        in the folder.
     """
     file_count : int = 0
     for file in folder.iterdir():
@@ -28,13 +28,13 @@ def is_dir(item: Path) -> bool:
     in fact a folder.
 
     Args:
-    item: Path - The item we're
-                 are checking.
+        item: Path - The item 
+        we're are checking.
 
     Returns:
-    bool - true if item is a 
-           folder, false if 
-           it's a file. 
+        bool - true if item is 
+        a folder, false if it's 
+        a file. 
     """
     return item.is_dir()
 
@@ -44,13 +44,13 @@ def is_file(item: Path) -> bool:
     in fact a file.
 
     Args:
-    item: Path - The item we're
-                 are checking.
+        item: Path - The item 
+        we're are checking.
 
     Returns:
-    bool - true if item is a 
-           file, false if 
-           it's a folder.
+        bool - true if item 
+        is a file, false if 
+        it's a folder.
     """
     return item.is_file()
     
