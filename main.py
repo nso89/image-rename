@@ -29,7 +29,7 @@ def is_dir(item: Path) -> bool:
 
     Args:
         item: Path - The item 
-        we're are checking.
+        we're checking.
 
     Returns:
         bool - true if item is 
@@ -45,7 +45,7 @@ def is_file(item: Path) -> bool:
 
     Args:
         item: Path - The item 
-        we're are checking.
+        we're checking.
 
     Returns:
         bool - true if item 
