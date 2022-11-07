@@ -4,9 +4,8 @@ from typing import List
 
 def get_file_count(folder: Path) -> int:
     """
-    Using a for loop and Path.is_file(),
-    we count all the files in a folder,
-    and return it.
+    Returns the number of files in a 
+    folder.
 
     Args:
         folder: Path - the folder 
@@ -64,24 +63,28 @@ def main():
 
     try:
         
-        # Using filder and is_dir(), we get only the folders as it's being determined.
+        # Using filter and is_dir(), we get only the folders as it's being determined.
         for folder in filter(is_dir,SOURCE_REPOSITORY.iterdir()):
             destination_repository_child = DESTINATION_REPOSITORY.joinpath(folder.stem)
             # Create the directory if it doesn't exist, if it does, no exception 
             # will be raised.
             destination_repository_child.mkdir(exist_ok = True)
-            # Pick up the count and add 1 to continue.
+            # Get count and add 1 to continue.
             number_of_files = get_file_count(destination_repository_child) + 1
             
-             # Using filder and is_file(), we get only the files as it's being determined.
+            print(f"\nSource : {folder} Destination: {destination_repository_child}")
+
+            # Using filter and is_file(), we get only the files as it's being determined.
             for index, source in enumerate(filter(is_file,folder.iterdir()), start = number_of_files):
                 destination = destination_repository_child.joinpath(f"{index}{source.suffix}")
-                print(f"Source: {source} Destination: {destination}")
+                print(f"Renaming {source.name} to {destination.name}")
                 shutil.move(src = source, dst = destination)
             
             to_delete.append(folder)
 
+        print("\nCleaning Up:")
         for folder in to_delete:
+            print(f"Removing: {folder.stem}")
             folder.rmdir()
 
     except (FileNotFoundError,OSError) as e:
