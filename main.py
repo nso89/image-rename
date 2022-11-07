@@ -66,13 +66,13 @@ def main():
         # Using filter and is_dir(), we get only the folders as it's being determined.
         for folder in filter(is_dir,SOURCE_REPOSITORY.iterdir()):
             destination_repository_child = DESTINATION_REPOSITORY.joinpath(folder.stem)
-            # Create the directory if it doesn't exist, if it does, no exception 
+            # Create the folder if it doesn't exist, if it does, no exception 
             # will be raised.
             destination_repository_child.mkdir(exist_ok = True)
             # Get count and add 1 to continue.
             number_of_files = get_file_count(destination_repository_child) + 1
             
-            print(f"\nSource : {folder} Destination: {destination_repository_child}")
+            print(f"\nSource: {folder} Destination: {destination_repository_child}")
 
             # Using filter and is_file(), we get only the files as it's being determined.
             for index, source in enumerate(filter(is_file,folder.iterdir()), start = number_of_files):
