@@ -9,7 +9,7 @@ Cleanup image filenames and move it to a destination
 
 #### <a name="prerequisites"></a>Prerequisites
 1. A completed install of `Python 3.x`.
-2. Under your `USERPROFILE`, a folder labelled `Repository` containing all the images we want to rename.
+2. Under your `USERPROFILE`, a folder labelled `Repository` containing all the subfolders with images we want to rename.
 
 **Example**:
 ```
@@ -26,19 +26,19 @@ C:\Users\nso89\Repository\Spock
 
 **Example**:
 ```batch
-C:\Users\nso89\image-rename-cleanup
+C:\Users\nso89\image-rename-cleanup-main
 ```
 #### <a name="running-the-script"></a>Running the Script
-1. Open `cmd.exe` and change the directory to the `image-rename-cleanup` folder.
+1. Open `cmd.exe` and change the directory to the `image-rename-cleanup-main` folder.
 
 **Example**:
 ```batch
-C:\Users\nso89>cd image-rename-cleanup
+C:\Users\nso89>cd image-rename-cleanup-main
 ```
 
 2. Start the `main.py` script.
 ```batch
-C:\Users\nso89\image-rename-cleanup>python main.py
+C:\Users\nso89\image-rename-cleanup-main>python main.py
 ```
 
 3. The script creates the necessary destination folders if they don't already exist, renames the images, and moves them to the destination folders.
@@ -51,7 +51,7 @@ Source: ..\Spock\8b10a9280bd46b8874af9b5cadec91d5.webp Destination: R:\Pictures\
 Source: ..\Spock\Spock_2254.webp Destination: R:\Pictures\Spock\2.webp
 ```
 #### <a name="cleaning-up"></a>Cleaning Up
-1. If the subfolders are empty, the script will remove them.
+1. If the subfolders are empty, they will be removed.
 
 #### <a name="configuration"></a>Configuration
 If you need to change the `source` or `destination` folder:
