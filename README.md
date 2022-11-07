@@ -22,23 +22,23 @@ C:\Users\nso89\Repository\Spock
     - Spock_2254.webp
 ```
 #### <a name="setup"></a>Setup
-1. Under your `USERPROFILE`, extract the `image-rename-cleanup.zip`.
+1. Under your `USERPROFILE`, extract the `image-rename-main.zip`.
 
 **Example**:
 ```batch
 C:\Users\nso89\image-rename-cleanup-main
 ```
 #### <a name="running-the-script"></a>Running the Script
-1. Open `cmd.exe` and change the directory to the `image-rename-cleanup-main` folder.
+1. Open `cmd.exe` and change the directory to the `image-rename-main` folder.
 
 **Example**:
 ```batch
-C:\Users\nso89>cd image-rename-cleanup-main
+C:\Users\nso89>cd image-rename-main
 ```
 
 2. Start the `main.py` script.
 ```batch
-C:\Users\nso89\image-rename-cleanup-main>python main.py
+C:\Users\nso89\image-rename-main>python main.py
 ```
 
 3. The script creates the necessary destination folders if they don't already exist, renames the images, and moves them to the destination folders.
