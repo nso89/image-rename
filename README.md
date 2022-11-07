@@ -1,5 +1,5 @@
 # image-rename
-Rename filenames and move it to a destination
+Rename files and move it to a destination
 
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
