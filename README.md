@@ -26,10 +26,10 @@ C:\Users\nso89\Repository\Spock
 
 **Example**:
 ```batch
-C:\Users\nso89\image-rename-cleanup-main
+C:\Users\nso89\image-rename-main
 ```
 #### <a name="running-the-script"></a>Running the Script
-1. Open `cmd.exe` and change the directory to the `image-rename-main` folder.
+1. Open `cmd.exe` and change the folder to the `image-rename-main` folder.
 
 **Example**:
 ```batch
