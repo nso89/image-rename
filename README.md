@@ -9,7 +9,7 @@ Rename files and move it to a destination
 
 #### <a name="prerequisites"></a>Prerequisites
 1. A completed install of `Python 3.x`.
-2. Under your `USERPROFILE`, a folder labelled `Repository` containing all the subfolders with images we want to rename.
+2. Under your `USERPROFILE`, a folder named `Repository` containing all the subfolders with images we want to rename.
 
 **Example**:
 ```
