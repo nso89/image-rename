@@ -1,5 +1,5 @@
-# image-rename-cleanup
-Cleanup image filenames and move it to a destination
+# image-rename
+Rename filenames and move it to a destination
 
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
