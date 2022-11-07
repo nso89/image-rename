@@ -45,13 +45,23 @@ C:\Users\nso89\image-rename-cleanup-main>python main.py
 
 **Example**:
 ```
-Source: ..\Kirk\James_T._Kirk,_alternate_reality.webp Destination: R:\Pictures\Kirk\1.webp
-Source: ..\Kirk\star-trek-strange-new-worlds-kirk-paul-wesley.png Destination: R:\Pictures\Kirk\2.png
-Source: ..\Spock\8b10a9280bd46b8874af9b5cadec91d5.webp Destination: R:\Pictures\Spock\1.webp
-Source: ..\Spock\Spock_2254.webp Destination: R:\Pictures\Spock\2.webp
+Source : C:\Users\nso89\Repository\Kirk Destination: R:\Pictures\Kirk
+Renaming James_T._Kirk,_alternate_reality.webp to 1.webp
+Renaming star-trek-strange-new-worlds-kirk-paul-wesley.png to 2.png
+
+Source : C:\Users\nso89\Repository\Spock Destination: R:\Pictures\Spock
+Renaming 8b10a9280bd46b8874af9b5cadec91d5.webp to 1.webp
+Renaming Spock_2254.webp to 2.webp
 ```
 #### <a name="cleaning-up"></a>Cleaning Up
 1. If the subfolders are empty, they will be removed.
+
+**Example**:
+```batch
+Cleaning Up:
+Removing: Kirk
+Removing: Spock
+```
 
 #### <a name="configuration"></a>Configuration
 If you need to change the `source` or `destination` folder:
