@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 from typing import List
 
+
 def get_file_count(folder: Path) -> int:
     """
     Returns the number of files in a 
@@ -21,6 +22,7 @@ def get_file_count(folder: Path) -> int:
             file_count += 1
     return file_count
 
+
 def is_dir(item: Path) -> bool:
     """
     Determine if the item is
@@ -36,6 +38,7 @@ def is_dir(item: Path) -> bool:
         a file. 
     """
     return item.is_dir()
+
 
 def is_file(item: Path) -> bool:
     """
