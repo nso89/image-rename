@@ -91,7 +91,7 @@ def main():
             print(f"Removing: {folder.stem}")
             folder.rmdir()
 
-    except (FileNotFoundError,OSError) as e:
+    except (FileNotFoundError, OSError) as e:
         print(e)
 
 if __name__ == "__main__":
