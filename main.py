@@ -3,6 +3,10 @@ import shutil
 from typing import List
 
 
+SOURCE_REPOSITORY = Path.home().joinpath("Repository")
+DESTINATION_REPOSITORY = Path("R:\Pictures")
+
+
 def get_file_count(folder: Path) -> int:
     """
     Returns the number of files in a 
@@ -58,9 +62,6 @@ def is_file(item: Path) -> bool:
     
 
 def main():
-
-    SOURCE_REPOSITORY = Path.home().joinpath("Repository")
-    DESTINATION_REPOSITORY = Path("R:\Pictures")
 
     to_delete : List[Path] = []
 
