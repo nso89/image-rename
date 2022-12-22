@@ -37,18 +37,15 @@ def main():
             number_of_files = get_file_count(destination_repository_child) + 1
             
             print(f"\nSource: {folder} Destination: {destination_repository_child}")
+            
+            item = (file for file in folder.iterdir() if file.is_file())
 
-            for index, source in enumerate((file for file in folder.iterdir() if file.is_file()), start = number_of_files):
+            for index, source in enumerate(item, start = number_of_files):
                 destination = destination_repository_child.joinpath(f"{index}{source.suffix}")
                 print(f"Renaming {source.name} to {destination.name}")
                 shutil.move(src = source, dst = destination)
             
             to_delete.append(folder)
-
-        print("\nCleaning Up:")
-        for folder in to_delete:
-            print(f"Removing: {folder.stem}")
-            folder.rmdir()
 
     except (FileNotFoundError, OSError) as e:
         print(e)
