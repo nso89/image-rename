@@ -1,4 +1,4 @@
-# image-rename
+# filename-cleanup
 Rename and move files to a destination
 
 * [Prerequisites](#prerequisites)
