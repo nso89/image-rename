@@ -11,9 +11,11 @@ def get_file_count(folder: Path) -> int:
     """
     Returns the number of files in a 
     folder.
+    
     Args:
         folder: Path - the folder 
         we're looping over.
+    
     Return:
         file_count: the number of files 
         in the folder.
